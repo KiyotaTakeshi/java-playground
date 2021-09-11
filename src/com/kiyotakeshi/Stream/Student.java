@@ -4,6 +4,9 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Student {
+
+    // name, score は、クラスのフィールドとして宣言するインスタンス変数
+    // 親のインスタンスを同じライフサイクルで親オブジェクトの GC 時に一緒に破棄される
     private String name;
     private int score;
 

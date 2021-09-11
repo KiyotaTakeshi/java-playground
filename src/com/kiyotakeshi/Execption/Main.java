@@ -7,6 +7,8 @@ import java.util.Optional;
 
 public class Main {
 
+    // log はクラス変数(クラスの static フィールドとして宣言する変数)
+    // クラスロード時に生成され、クラスアンロード時に破棄される
     private static Logger log = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) {
