@@ -1,0 +1,25 @@
+[
+  {
+    "name": "yamamda",
+    "age": 22,
+    "licenses": [
+      "AWS",
+      "CKAD"
+    ]
+  },
+  {
+    "name": "tanaka",
+    "age": 20,
+    "licenses": [
+      "CCNP"
+    ]
+  },
+  {
+    "name": "test3",
+    "age": 41,
+    "licenses": [
+      "Linac",
+      "AWS"
+    ]
+  }
+]

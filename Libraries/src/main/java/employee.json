@@ -1,0 +1,10 @@
+{
+  "name": "mike popcorn",
+  "age": 35,
+  "licenses": [
+    "AWS",
+    "CCNA",
+    "CKA"
+  ],
+  "address": "Osaka"
+}
