@@ -7,6 +7,7 @@ import java.io.InputStream;
 import java.net.URI;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.*;
+import java.util.Properties;
 
 public class Main {
 
@@ -119,6 +120,17 @@ public class Main {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }
+
+        System.out.println("----------------------------");
+        Path propertyPath = Paths.get("src/com/kiyotakeshi/mail.properties");
+        try (BufferedReader reader = Files.newBufferedReader(propertyPath, StandardCharsets.UTF_8)) {
+            Properties properties = new Properties();
+            properties.load(reader);
+            String address = properties.getProperty("system.mail.address");
+            System.out.println(address);
+        } catch (IOException ex) {
+            ex.printStackTrace();
         }
     }
 }
